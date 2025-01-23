@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Columna';
+    src: url('resources/OPTIColumna-Solid.otf');
+}
+
+body {
+    font-family: 'Columna';
+    background-color: black;
+    margin: 0px;
+}
+#header {
+    background-color: #38fc8b;
+    color: #690dac;
+    text-align: center;
+    padding: .5rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    border-bottom: solid 8px #7a10c7;
+}
+
+b {
+    color: #7a10c7;
+}
+
+#quotes {
+    color: #9b3ede;
+    position: relative;
+}
+
+.quote-block {
+    background-color: #38fc8b;
+    width: 50%;
+    margin: 2rem auto;
+    padding: .5rem 1.5rem;
+    border-radius: 30px;
+    z-index: 4;
+    transition: box-shadow 0.2s ease;
+}
+
+.quote-block:hover {
+    box-shadow: 10px 10px 20px #7a10c7;
+}
+
+.quote-block#q3 {
+    margin-top: 10rem;
+    position: relative;
+    z-index: 2;
+}
+
+.staypuft {
+    height: 225px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    clip-path: inset(50px, 50px, 50px, 50px);
+}
+
+#staypuft-main {
+    z-index: 1;
+}
+
+#staypuft-overlay {
+    z-index: 3;
+}
