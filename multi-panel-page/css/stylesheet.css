@@ -1,0 +1,147 @@
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+}
+
+header {
+    line-height: 110%;
+    padding: 9rem 0 10.5rem 0;
+    margin: 0;
+    background-image: url('../resources/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 1.87rem;
+}
+
+#sec1 h3 {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+}
+
+#sec1 {
+    padding: 0.1rem 0 2.3rem 0;
+    background-color: #110263;
+    color: white;
+}
+
+#sec1-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#sec1 p {
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+#sec1 img {
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin: 0 0 2rem 2.5rem;
+    border: white 1px solid;
+}
+
+ul.grid {
+    display: grid;
+    align-items: center;
+}
+
+ul.grid li {
+    display: inline-block;
+}
+
+#sec2 {
+    padding-top: 0.1rem;
+    padding-bottom: 2.6rem;
+    background-color: lightgray;
+}
+
+#sec2 h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#sec2 ul.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 0.05rem;
+    transform: translateX(-20px);
+}
+
+#sec2 ul.grid li {
+    margin-bottom: 1.25rem;
+}
+
+#sec2 img {
+    width: 200px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.photo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 1px 2rem 0 0;
+}
+
+.photo-desc-wrapper {
+    text-align: left;
+}
+
+.photo-desc-wrapper h4 {
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.photo-desc-wrapper p {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+}
+
+#sec3 {
+    background-color: #110263;
+    color: white;
+    padding-top: 0.1rem;
+    padding-bottom: 6.1rem;
+}
+
+#sec3 h3 {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+}
+
+#sec3 p {
+    font-size: 1.62rem;
+    max-width: 710px;
+    margin: 0 auto;
+    line-height: 2.25rem;
+}
+
+footer {
+    text-align: left;
+    background-color: lightgray;
+    padding-top: 0.1rem;
+    padding-bottom: 1.3rem;
+}
+
+footer p {
+    margin-left: 12.1rem;
+    margin-top: 2.75rem;
+    font-size: 1.14rem;
+}
