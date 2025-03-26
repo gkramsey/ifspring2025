@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'USArmy';
+    src: url('resources/USArmy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Compacta';
+    src: url('resources/Compacta.woff');
+}
+
+@font-face {
+    font-family: 'HarryP';
+    src: url('resources/HarryP.woff');
+}
+
+@font-face {
+    font-family: 'IBM';
+    src: url('resources/IBM-Logo.woff');
+}
+
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a#btn_nbc {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_nbc:hover {
+    background-color: #445972;
+    transition: background-color 2s;
+}
+
+a#btn_nbc:hover #nbc_logo {
+    animation: nbc 2s;
+}
+
+a#btn_nbc #nbc_logo {
+    width: 60%;
+    margin-top: 12px;
+}
+
+@keyframes nbc {
+    from {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 65%, 50% 66%, 0 66%, 0 66%, 0 65%);
+    }
+
+    12% {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 65%, 49% 65%, 0 28%, 0 65%, 0 65%);
+    }
+
+    24% {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 65%, 49% 65%, 18% 0, 0 0, 0 65%);
+    }
+
+    36% {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 65%, 49% 65%, 51% 0, 0 0, 0 65%);
+    }
+
+    48% {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 65%, 53% 65%, 81% 0, 51% 0, 0 0);
+    }
+
+    60% {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 65%, 48% 65%, 100% 29%, 100% 0, 0 0);
+    }
+
+    72% {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 65%, 48% 65%, 100% 65%, 100% 0, 0 0);
+    }
+
+    to {
+        clip-path: polygon(0 65%, 0 65%, 0 65%, 0 100%, 52% 100%, 100% 100%, 100% 0, 0 0);
+    }
+}
+
+#wrapper_ibm {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 54px;
+    margin-top: 105px;
+}
+
+a#btn_ibm, a#mask_ibm {
+    height: 54px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    padding: 13px 20px 0 25px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'IBM', serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_ibm {
+    display: inline-block;
+    background-color: #007bff;
+    position: relative;
+    z-index: 1;
+}
+
+a#mask_ibm {
+    background: linear-gradient(to right, #007bff 0%, #f65a9c);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+#wrapper_ibm:hover #mask_ibm {
+    animation: gradient 1s;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+@keyframes gradient {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+
+    to {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+a#btn_potter {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 25px 0 25px;
+    background-color: #0a173a;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'HarryP', 'serif';
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color .5s, color 1.5s, box-shadow 2s;
+}
+
+a#btn_potter:hover {
+    background-color: #5759fc;
+    color: gold;
+    box-shadow: 0 0 15px gold;
+}
+
+a#btn_potter i {
+    font-size: 25px;
+    clip-path: polygon(0 0, 63% 0, 63% 0, 0 0);
+}
+
+a#btn_potter:hover i {
+    animation-delay: 0.5s;
+    animation: strike 2s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* used this website for clipping help https://bennettfeely.com/clippy/ */
+@keyframes strike {
+    from {
+        clip-path: polygon(0 0, 63% 0, 63% 0, 0 0);
+    }
+  
+    33% {
+        clip-path: polygon(0 0, 63% 0, 42% 57%, 0 57%);
+    }
+
+    66% {
+        clip-path: polygon(0 0, 100% 0, 100% 57%, 0 57%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}  
+
+a#btn_harley {
+    display: inline-block;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #fa6700;
+    color: black;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_harley span {
+    color: #fa6700;
+    font-family: 'Compacta';
+    font-size: 30px;
+    transition: color .4s
+}
+
+a#btn_harley i {
+    position: relative;
+    left: -110px;
+    font-size: 30px;
+    z-index: 10;
+    margin-left: 10px;
+    transition: left 1s;
+}
+
+a#btn_harley:hover i {
+    left: 0;
+}
+
+a#btn_harley span#l1 {
+    transition-delay: 0.5s;
+}
+
+a#btn_harley span#l2 {
+    transition-delay: 0.4s;
+}
+
+a#btn_harley span#l3 {
+    transition-delay: 0.3s;
+}
+
+a#btn_harley span#l4 {
+    transition-delay: 0.2s;
+}
+
+a#btn_harley span#l5 {
+    transition-delay: 0.1s;
+}
+
+a#btn_harley span#l6 {
+    transition-delay: 0s;
+}
+
+a#btn_harley:hover span {
+    color: black
+}
+
+a#btn_harley:hover span#l1 {
+    transition-delay: 0s;
+}
+
+a#btn_harley:hover span#l2 {
+    transition-delay: 0.1s;
+}
+
+a#btn_harley:hover span#l3 {
+    transition-delay: 0.2s;
+}
+
+a#btn_harley:hover span#l4 {
+    transition-delay: 0.3s;
+}
+
+a#btn_harley:hover span#l5 {
+    transition-delay: 0.4s;
+}
+
+a#btn_harley:hover span#l6 {
+    transition-delay: 0.5s;
+}
+
+a#btn_army {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 165px;
+    height: 165px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #211f20;
+    color: #fdcc0a;
+    text-align: center;
+    transition: background-color .35s;
+    text-decoration: none;
+}
+
+a#btn_army:hover {
+    background-color: #fdcc0a;
+}
+
+a#btn_army i {
+    font-size: 80px;
+}
+
+a#btn_army #army-hover {
+    display: none;
+    color: #211f20;
+}
+
+a#btn_army:hover #army-reg {
+    display: none;
+}
+
+a#btn_army:hover #army-hover {
+    display: inline;
+}
+
+a#btn_army p {
+    font-family: 'USArmy';
+    font-size: 45px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+a#btn_army:hover p {
+    color: #211f20;
+}
