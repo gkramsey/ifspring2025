@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Gluten', sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #298100;
+    color: #000;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#header-image {
+    width: 200px;
+    margin: 0;
+    position: absolute;
+    transform: translate(-449px, 1px);
+    z-index: 3;
+}
+
+#bamboo-nav {
+    width: 850px;
+    position: absolute;
+    transform: translateY(-157px);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #000;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+    position: absolute;
+}
+
+nav a:hover {
+    color: #304d00
+}
+
+#nav-home {
+    transform: translate(-346px, -22px);
+}
+
+#nav-behavior {
+    transform: translate(-174px, -22px);
+}
+
+#nav-habitat {
+    transform: translateY(-22px);
+}
+
+#nav-conservation {
+    transform: translate(174px, -22px);
+}
+
+#nav-gallery {
+    transform: translate(346px, -22px);
+}
+
+.trans-box {
+    max-width: 900px;
+    margin: 0 15rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.content-section h2 {
+    padding: 2rem;
+    margin: 0;
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Gabarito', serif;
+    color: #000;
+    padding: 2rem;
+    margin: 0;
+}
+
+#home {
+    background-image: url('images/panda-home.jpg');
+    background-size: cover;
+    background-position: center calc(50% -100px);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#behavior {
+    background-color: #D8C596;
+    margin-top: 0;
+}
+
+#habitat {
+    background-color: #9FC164;
+    margin-top: 0;
+}
+
+#conservation {
+    background-color: #D8C596;
+    margin-top: 0;
+}
+
+#gallery {
+    background-color: #9FC164;
+    margin-top: 0;
+}
